@@ -1,4 +1,5 @@
 from room import Room
+from player import Player
 
 # Declare all the rooms
 
@@ -38,6 +39,12 @@ room['treasure'].s_to = room['narrow']
 #
 
 # Make a new player object that is currently in the 'outside' room.
+name = input("What do they call you around these parts?")
+
+Katie = Player("Katie",room['outside'])
+currentLocation = None
+
+print("To play, use w, n, e, s to navigate West, North, East or South. Press q at any time to quit")
 
 # Write a loop that:
 #
